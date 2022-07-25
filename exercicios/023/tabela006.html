@@ -6,57 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
     <style>
-        body{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-        }
-        table{
-            width: 1000px;
-            height: auto;
-        }
-        td{
-            text-align: center;
-            border: 1px solid black;
-            vertical-align: middle;
-        }
-        td.left{
-            text-align: left;
-        }
-        td.filme{
-            width: 600px;
-        }
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+table{
+    border-collapse:  collapse;
+}
+caption{
+    font: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+}
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
     </style>
 </head>
 <body>
     <h1>Tabelas</h1>
     <table>
-        <tr>
-            <td style="width: 100px;">Grupo</td>
-            <td>Nomes</td>
-            <td class="filme">Filmes</td>
-        </tr>
-        <tr>
-            <td rowspan="3">Mulheres</td>
-            <td>Ana Maria</td>
-            <td>Alien</td>
-            <td>Rambo</td>
-            <td>Vingadores</td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-
-        </tr>
-        <tr>
-
-        </tr>
-        <tr>
-
-        </tr>
-        <tr>
-
-        </tr>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th>Grupos</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Sousa</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
